@@ -1,19 +1,21 @@
+<!-- views/stock_lot_views.xml -->
 <odoo>
-    <record id="view_lot_form_inherit_rollo" model="ir.ui.view">
-        <field name="name">stock.lot.form.inherit.rollo</field>
-        <field name="model">stock.lot</field>  <!-- Cambiado a 'stock.lot' -->
-        <field name="inherit_id" ref="stock.view_lot_form"/> <!-- Referencia correcta a la vista original -->
+    <record id="view_lot_form_rollo" model="ir.ui.view">
+        <field name="name">stock.lot.form.rollo</field>
+        <field name="model">stock.lot</field>
         <field name="arch" type="xml">
-            <xpath expr="//sheet" position="inside">
-                <group>
-                    <field name="ancho"/>
-                    <field name="gramaje"/>
-                    <field name="tipo"/>
-                    <field name="kilos"/>
-                    <field name="planta"/>
-                    <field name="folio"/>
-                </group>
-            </xpath>
+            <form string="Lote de Producción">
+                <sheet>
+                    <group>
+                        <field name="ancho"/>
+                        <field name="gramaje"/>
+                        <field name="tipo"/>
+                        <field name="kilos"/>
+                        <field name="planta"/>
+                        <field name="folio"/>
+                    </group>
+                </sheet>
+            </form>
         </field>
     </record>
 </odoo>
