@@ -1,10 +1,13 @@
-<!-- views\stock_picking_views.xml -->
 <odoo>
     <record id="view_picking_form_inherit_rollo" model="ir.ui.view">
         <field name="name">stock.picking.form.inherit.rollo</field>
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
+            <!-- Asegurarse de que company_id esté presente en la vista -->
+            <xpath expr="//form" position="inside">
+                <field name="company_id" invisible="1"/>
+            </xpath>
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
             <xpath expr="//field[@name='move_line_ids']" position="inside">
                 <tree editable="bottom">
