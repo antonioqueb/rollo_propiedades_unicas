@@ -9,4 +9,4 @@ class StockLot(models.Model):
     kilos = fields.Float(string="Kilos")
     planta = fields.Char(string="Planta")
     folio = fields.Char(string="Folio")
-    lot_name = fields.Char(string="Lot Name")
+    
