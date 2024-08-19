@@ -1,7 +1,7 @@
 {
     'name': 'Propiedades Únicas de Rollo',
     'version': '1.0',
-    'author': 'Alphaqueb Consulting S.A.S.',
+    'author': 'TuNombre',
     'category': 'Inventario',
     'summary': 'Gestión de propiedades únicas por rollo',
     'description': """
@@ -11,7 +11,7 @@
     'depends': ['stock', 'base'],
     'data': [
         'views/stock_picking_views.xml',
-        'views/stock_production_lot_views.xml',
+        'views/stock_lot_views.xml',
         'views/assets.xml',
         'report/rollo_label_template.xml',
     ],
@@ -19,3 +19,4 @@
     'application': False,
     'license': 'LGPL-3',
 }
+stock_picking_views.xml
