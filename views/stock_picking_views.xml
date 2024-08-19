@@ -5,15 +5,19 @@
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
-            <xpath expr="//field[@name='move_line_ids']/tree" position="inside">
-                <!-- Campos personalizados -->
-                <field name="ancho"/>
-                <field name="gramaje"/>
-                <field name="tipo"/>
-                <field name="kilos"/>
-                <field name="planta"/>
-                <field name="folio"/>
+            <xpath expr="//group/field[@name='move_line_ids']" position="inside">
+                <tree editable="bottom">
+                    <field name="product_id"/>
+                    <field name="ancho"/>
+                    <field name="gramaje"/>
+                    <field name="tipo"/>
+                    <field name="kilos"/>
+                    <field name="planta"/>
+                    <field name="folio"/>
+                </tree>
             </xpath>
+
+
         </field>
     </record>
 </odoo>
