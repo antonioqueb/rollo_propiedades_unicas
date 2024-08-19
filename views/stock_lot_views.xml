@@ -10,7 +10,7 @@
         <field name="binding_model_id" ref="stock.model_stock_lot"/>
     </record>
 
-    <!-- Agrega la opción en el formulario de stock.lot -->
+    <!-- Agregar el botón para imprimir la etiqueta -->
     <record id="view_lot_form_rollo" model="ir.ui.view">
         <field name="name">stock.lot.form.rollo</field>
         <field name="model">stock.lot</field>
