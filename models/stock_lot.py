@@ -1,6 +1,7 @@
 # models\stock_lot.py
 from odoo import models, fields
 
+
 class StockLot(models.Model):
     _inherit = 'stock.lot'
 
@@ -10,4 +11,3 @@ class StockLot(models.Model):
     kilos = fields.Float(string="Kilos")
     planta = fields.Char(string="Planta")
     folio = fields.Char(string="Folio")
-    
