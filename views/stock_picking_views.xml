@@ -4,13 +4,8 @@
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
-            <!-- Asegúrate de insertar el campo company_id -->
-            <xpath expr="//form/sheet/group" position="inside">
-                <field name="company_id"/>
-            </xpath>
-
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
-            <xpath expr="//field[@name='move_line_ids']/tree" position="inside">
+            <xpath expr="//page[@name='operations']/field[@name='move_ids_without_package']/tree/field[@name='move_line_ids']/tree" position="inside">
                 <!-- Campos personalizados -->
                 <field name="ancho"/>
                 <field name="gramaje"/>
