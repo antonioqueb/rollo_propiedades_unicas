@@ -19,4 +19,3 @@
     'application': False,
     'license': 'LGPL-3',
 }
-stock_picking_views.xml
