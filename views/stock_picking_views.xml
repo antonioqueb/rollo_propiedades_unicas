@@ -5,7 +5,7 @@
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
-            <xpath expr="//page[@name='operations']/field[@name='move_ids_without_package']/tree/field[@name='move_line_ids']/tree" position="inside">
+            <xpath expr="//field[@name='move_line_ids']/tree" position="inside">
                 <!-- Campos personalizados -->
                 <field name="ancho"/>
                 <field name="gramaje"/>
