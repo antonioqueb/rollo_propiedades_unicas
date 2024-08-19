@@ -9,16 +9,16 @@
                 <field name="company_id"/>
             </xpath>
 
-            <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
+            <!-- Modificar la vista de las líneas de movimiento -->
             <xpath expr="//field[@name='move_line_ids']" position="replace">
                 <field name="move_line_ids">
                     <tree editable="bottom">
-                        <!-- Campos originales del modelo stock.move.line -->
+                        <!-- Campos estándar -->
                         <field name="product_id" domain="[('company_id', '=', context.get('company_id', False)), ('type', '!=', 'service')]" required="1"/>
                         <field name="lot_id" context="{'default_product_id': product_id}" domain="[('product_id', '=', product_id)]" required="1"/>
-                        <field name="quantity" string="Done Quantity" required="1"/>
+                        <field name="quantity" string="Cantidad Procesada" required="1"/>
 
-                        <!-- Campos personalizados del rollo añadidos a la línea de movimientos -->
+                        <!-- Campos personalizados del rollo -->
                         <field name="ancho" string="Ancho"/>
                         <field name="gramaje" string="Gramaje"/>
                         <field name="tipo" string="Tipo"/>
