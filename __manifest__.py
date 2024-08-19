@@ -13,6 +13,7 @@
     "depends": ["stock", "base", "web"],  # Asegúrate de incluir "web" para cargar el módulo JS correctamente.
     "data": [
         "views/stock_picking_views.xml",
+        "views/rollo_menu_views.xml",
         "views/stock_lot_views.xml",
         "report/rollo_label_template.xml",
         "security/ir.model.access.csv"  # Incluye este archivo si es necesario.
