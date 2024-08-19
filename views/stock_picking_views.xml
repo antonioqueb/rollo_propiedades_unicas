@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
-            <xpath expr="//field[@name='move_line_ids_without_package']" position="inside">
+            <xpath expr="//field[@name='move_line_ids']" position="inside">
                 <tree editable="bottom">
                     <field name="lot_id" context="{'default_product_id': product_id}" domain="[('product_id', '=', product_id)]">
                         <!-- Mostrar los campos personalizados -->
