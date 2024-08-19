@@ -4,8 +4,8 @@
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
-            <!-- Asegurarse de que company_id esté presente en la vista -->
-            <xpath expr="//form" position="inside">
+            <!-- Asegurar que el campo company_id esté presente -->
+            <xpath expr="//sheet" position="inside">
                 <field name="company_id" invisible="1"/>
             </xpath>
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
