@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_stock_lot_rollo_user,access_stock_lot_rollo_user,model_stock_lot,base.group_user,1,0,0,0
-access_stock_lot_rollo_manager,access_stock_lot_rollo_manager,model_stock_lot,base.group_erp_manager,1,1,1,1
+access_stock_move_line_rollo_user,access_stock_move_line_rollo_user,model_stock_move_line,base.group_user,1,0,0,0
+access_stock_move_line_rollo_manager,access_stock_move_line_rollo_manager,model_stock_move_line,base.group_system,1,1,1,1
