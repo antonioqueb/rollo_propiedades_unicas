@@ -1,0 +1,36 @@
+/* Estilos personalizados para las propiedades de los rollos */
+
+/* Este estilo se aplica al formulario del rollo, asegurando que los campos sean uniformes */
+.o_form_view .rollo_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.o_form_view .rollo_form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.o_form_view .rollo_form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Estilo para la etiqueta de impresión */
+.page {
+    font-family: Arial, sans-serif;
+}
+
+.page h2 {
+    text-align: center;
+    color: #333;
+}
+
+.page p {
+    font-size: 14px;
+    margin: 5px 0;
+}

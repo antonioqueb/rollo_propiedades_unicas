@@ -1,0 +1,15 @@
+<odoo>
+    <template id="report_rollo_label">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <h2>Etiqueta de Rollo</h2>
+                <p><strong>Ancho:</strong> <span t-field="lot.ancho"/> cm</p>
+                <p><strong>Gramaje:</strong> <span t-field="lot.gramaje"/> g/m²</p>
+                <p><strong>Tipo:</strong> <span t-field="lot.tipo"/></p>
+                <p><strong>Kilos:</strong> <span t-field="lot.kilos"/> kg</p>
+                <p><strong>Planta:</strong> <span t-field="lot.planta"/></p>
+                <p><strong>Folio:</strong> <span t-field="lot.folio"/></p>
+            </div>
+        </t>
+    </template>
+</odoo>
