@@ -9,7 +9,7 @@
     <field name="arch" type="xml">
         <form string="Lote de Producción">
             <header>
-                <button name="%(action_report_rollo_label)d" string="Imprimir Etiqueta" type="action" class="oe_highlight"/>
+                <button name="%(action_report_rollo_label)d" string="Imprimir Etiqueta Personalizada" type="action" class="oe_highlight"/>
             </header>
             <sheet>
                 <group>
