@@ -6,8 +6,11 @@
         <field name="arch" type="xml">
             <!-- Asegurar que el campo company_id esté presente -->
             <xpath expr="//sheet" position="inside">
-                <field name="company_id" invisible="1"/>
+                <group>
+                    <field name="company_id"/>
+                </group>
             </xpath>
+
             <!-- Insertar las propiedades del rollo dentro de las líneas de movimiento -->
             <xpath expr="//field[@name='move_line_ids']" position="inside">
                 <tree editable="bottom">
