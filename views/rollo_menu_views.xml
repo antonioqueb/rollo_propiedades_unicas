@@ -19,6 +19,7 @@
             <field name="domain">[('product_id.tracking', '=', 'serial')]</field> <!-- Ajusta el dominio si es necesario -->
         </record>
 
+
         <!-- Acción para la vista de picking -->
         <record id="action_rollo_picking" model="ir.actions.act_window">
             <field name="name">Picking de Rollo</field>
