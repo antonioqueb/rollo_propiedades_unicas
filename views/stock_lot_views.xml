@@ -1,35 +1,28 @@
 <!-- views\stock_lot_views.xml -->
 <odoo>
-    <record id="action_report_rollo_label" model="ir.actions.report">
-        <field name="name">Etiqueta de Rollo</field>
-        <field name="model">stock.move.line</field>
-        <field name="report_type">qweb-pdf</field>
-        <field name="report_name">rollo_propiedades_unicas.report_rollo_label</field>
-        <field name="report_file">rollo_propiedades_unicas.report_rollo_label</field>
-        <field name="print_report_name">'Etiqueta de Rollo - ' + object.name</field>
-        <field name="binding_model_id" ref="stock.model_stock_lot"/>
-    </record>
+
 
     <!-- Agregar el botón para imprimir la etiqueta -->
-    <record id="view_lot_form_rollo" model="ir.ui.view">
-        <field name="name">stock.move.line.form.rollo</field>
-        <field name="model">stock.move.line</field>
-        <field name="arch" type="xml">
-            <form string="Lote de Producción">
-                <header>
-                    <button name="%(action_report_rollo_label)d" string="Imprimir Etiqueta" type="action" class="oe_highlight"/>
-                </header>
-                <sheet>
-                    <group>
-                        <field name="ancho"/>
-                        <field name="gramaje"/>
-                        <field name="tipo"/>
-                        <field name="kilos"/>
-                        <field name="planta"/>
-                        <field name="folio"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
+<record id="view_lot_form_rollo" model="ir.ui.view">
+    <field name="name">stock.move.line.form.rollo</field>
+    <field name="model">stock.move.line</field>
+    <field name="arch" type="xml">
+        <form string="Lote de Producción">
+            <header>
+                <button name="%(action_report_rollo_label)d" string="Imprimir Etiqueta" type="action" class="oe_highlight"/>
+            </header>
+            <sheet>
+                <group>
+                    <field name="ancho"/>
+                    <field name="gramaje"/>
+                    <field name="tipo"/>
+                    <field name="kilos"/>
+                    <field name="planta"/>
+                    <field name="folio"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
 </odoo>
