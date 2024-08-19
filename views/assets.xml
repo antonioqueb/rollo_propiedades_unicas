@@ -1,8 +1,0 @@
-<odoo>
-    <template id="assets_backend_rollo" name="Propiedades Únicas de Rollo Assets" inherit_id="web.assets_backend">
-        <xpath expr="." position="inside">
-            <script type="text/javascript" src="/rollo_propiedades_unicas/static/src/js/rollo_properties.js"></script>
-            <link rel="stylesheet" href="/rollo_propiedades_unicas/static/src/css/rollo_properties.css"/>
-        </xpath>
-    </template>
-</odoo>
