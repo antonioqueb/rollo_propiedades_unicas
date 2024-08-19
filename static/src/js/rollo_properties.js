@@ -1,3 +1,4 @@
+// static\src\js\rollo_properties.js
 /** @odoo-module **/
 
 import { Component } from '@odoo/owl';

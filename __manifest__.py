@@ -8,7 +8,7 @@
         Este módulo permite gestionar propiedades únicas de cada rollo (ancho, gramaje, tipo, kilos, planta, folio)
         durante la recepción de productos y genera etiquetas personalizadas.
     """,
-    'depends': ['stock', 'base'],
+    'depends': ['stock', 'base', 'web'],
     'data': [
         'views/stock_picking_views.xml',
         'views/stock_lot_views.xml',

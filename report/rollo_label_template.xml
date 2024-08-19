@@ -1,4 +1,4 @@
-<!-- report\rollo_label_template.xml -->
+
 <odoo>
     <template id="report_rollo_label">
         <t t-call="web.external_layout">

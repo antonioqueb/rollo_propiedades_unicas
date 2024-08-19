@@ -1,4 +1,4 @@
-<!-- views/stock_lot_views.xml -->
+
 <odoo>
     <record id="view_lot_form_rollo" model="ir.ui.view">
         <field name="name">stock.lot.form.rollo</field>
