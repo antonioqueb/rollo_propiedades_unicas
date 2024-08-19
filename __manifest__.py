@@ -10,20 +10,20 @@
     "author": "Alphaqueb Consulting S.A.S.",
     "website": "https://gestpro.cloud",
     "license": "LGPL-3",
-    "depends": ["stock", "base", "web"],  # Incluye 'web' en las dependencias para asegurar la carga del módulo
+    "depends": ["stock", "base", "web"],  # Asegúrate de incluir "web" para cargar el módulo JS correctamente.
     "data": [
         "views/stock_picking_views.xml",
         "views/stock_lot_views.xml",
         "report/rollo_label_template.xml",
-        "security/ir.model.access.csv"  # Incluye el archivo de acceso a modelos, si es necesario
+        "security/ir.model.access.csv"  # Incluye este archivo si es necesario.
     ],
-    "assets": {  # Sección de assets para gestionar CSS y JS en las versiones modernas de Odoo
+    "assets": {  # La nueva estructura de assets.
         "web.assets_backend": [
-            "rollo_propiedades_unicas/static/src/js/rollo_properties.js",
+            "rollo_propiedades_unicas/static/src/js/rollo_properties.js",  # Asegúrate de que las rutas sean correctas.
             "rollo_propiedades_unicas/static/src/css/rollo_properties.css"
         ],
     },
-    "images": ["static/description/icon.png"],  # Agrega un ícono si es necesario
+    "images": ["static/description/icon.png"],  # Puedes agregar íconos si lo necesitas.
     "installable": True,
     "auto_install": False,
     "application": False
