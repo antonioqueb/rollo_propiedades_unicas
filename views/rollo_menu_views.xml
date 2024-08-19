@@ -16,7 +16,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <!-- Menú raíz -->
+       <!-- Menú raíz -->
         <menuitem id="menu_rollo_root" name="Propiedades de Rollo" sequence="10"/>
 
         <!-- Submenú para Lotes de Rollo -->
