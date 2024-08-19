@@ -2,7 +2,7 @@
 <odoo>
     <record id="action_report_rollo_label" model="ir.actions.report">
         <field name="name">Etiqueta de Rollo</field>
-        <field name="model">stock.lot</field>
+        <field name="model">stock.move.line</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">rollo_propiedades_unicas.report_rollo_label</field>
         <field name="report_file">rollo_propiedades_unicas.report_rollo_label</field>
@@ -12,8 +12,8 @@
 
     <!-- Agregar el botón para imprimir la etiqueta -->
     <record id="view_lot_form_rollo" model="ir.ui.view">
-        <field name="name">stock.lot.form.rollo</field>
-        <field name="model">stock.lot</field>
+        <field name="name">stock.move.line.form.rollo</field>
+        <field name="model">stock.move.line</field>
         <field name="arch" type="xml">
             <form string="Lote de Producción">
                 <header>

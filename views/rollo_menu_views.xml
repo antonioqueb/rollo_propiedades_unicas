@@ -4,7 +4,7 @@
         <!-- Acción para la vista de lotes -->
         <record id="action_rollo_lot" model="ir.actions.act_window">
             <field name="name">Lotes de Rollo</field>
-            <field name="res_model">stock.lot</field>
+            <field name="res_model">stock.move.line</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[('product_id.tracking', '=', 'serial')]</field> <!-- Ajusta el dominio si es necesario -->
         </record>
