@@ -1,16 +1,27 @@
-
 <odoo>
     <template id="report_rollo_label">
         <t t-call="web.external_layout">
             <div class="page">
+                <div class="oe_structure"/>
                 <h2>Etiqueta de Rollo</h2>
-                <p><strong>Ancho:</strong> <span t-field="lot.ancho"/> cm</p>
-                <p><strong>Gramaje:</strong> <span t-field="lot.gramaje"/> g/m²</p>
-                <p><strong>Tipo:</strong> <span t-field="lot.tipo"/></p>
-                <p><strong>Kilos:</strong> <span t-field="lot.kilos"/> kg</p>
-                <p><strong>Planta:</strong> <span t-field="lot.planta"/></p>
-                <p><strong>Folio:</strong> <span t-field="lot.folio"/></p>
+                <p><strong>Ancho:</strong> <span t-field="o.ancho"/> cm</p>
+                <p><strong>Gramaje:</strong> <span t-field="o.gramaje"/> g/m²</p>
+                <p><strong>Tipo:</strong> <span t-field="o.tipo"/></p>
+                <p><strong>Kilos:</strong> <span t-field="o.kilos"/> kg</p>
+                <p><strong>Planta:</strong> <span t-field="o.planta"/></p>
+                <p><strong>Folio:</strong> <span t-field="o.folio"/></p>
             </div>
         </t>
     </template>
+
+    <!-- Registro del informe -->
+    <record id="action_report_rollo_label" model="ir.actions.report">
+        <field name="name">Etiqueta de Rollo</field>
+        <field name="model">stock.lot</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">rollo_propiedades_unicas.report_rollo_label</field>
+        <field name="report_file">rollo_propiedades_unicas.report_rollo_label</field>
+        <field name="print_report_name">'Etiqueta de Rollo - ' + object.name</field>
+        <field name="binding_model_id" ref="stock.model_stock_lot"/>
+    </record>
 </odoo>

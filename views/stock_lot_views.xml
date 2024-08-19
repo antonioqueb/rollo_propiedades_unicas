@@ -1,10 +1,23 @@
-<!-- views\stock_lot_views.xml -->
 <odoo>
+    <record id="action_report_rollo_label" model="ir.actions.report">
+        <field name="name">Etiqueta de Rollo</field>
+        <field name="model">stock.lot</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">rollo_propiedades_unicas.report_rollo_label</field>
+        <field name="report_file">rollo_propiedades_unicas.report_rollo_label</field>
+        <field name="print_report_name">'Etiqueta de Rollo - ' + object.name</field>
+        <field name="binding_model_id" ref="stock.model_stock_lot"/>
+    </record>
+
+    <!-- Agrega la opción en el formulario de stock.lot -->
     <record id="view_lot_form_rollo" model="ir.ui.view">
         <field name="name">stock.lot.form.rollo</field>
         <field name="model">stock.lot</field>
         <field name="arch" type="xml">
             <form string="Lote de Producción">
+                <header>
+                    <button name="%(action_report_rollo_label)d" string="Imprimir Etiqueta" type="action" class="oe_highlight"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="ancho"/>
