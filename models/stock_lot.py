@@ -1,3 +1,4 @@
+# models\stock_lot.py
 from odoo import models, fields
 
 class StockLot(models.Model):

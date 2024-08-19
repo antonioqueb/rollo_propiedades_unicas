@@ -1,15 +1,14 @@
+<!-- views\stock_picking_views.xml -->
 <odoo>
     <record id="view_picking_form_inherit_rollo" model="ir.ui.view">
         <field name="name">stock.picking.form.inherit.rollo</field>
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
-            <!-- Asegúrate de que el campo exista -->
             <xpath expr="//sheet/group/group" position="inside">
                 <field name="move_line_ids_without_package" widget="one2many"/>
             </xpath>
 
-            <!-- Ahora agrega tu nueva estructura -->
             <xpath expr="//field[@name='move_line_ids_without_package']" position="after">
                 <field name="lot_id">
                     <tree editable="bottom">

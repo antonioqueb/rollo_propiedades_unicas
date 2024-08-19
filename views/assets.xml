@@ -1,3 +1,4 @@
+<!-- views\assets.xml -->
 <odoo>
     <template id="assets_backend" name="Propiedades Únicas de Rollo Assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
