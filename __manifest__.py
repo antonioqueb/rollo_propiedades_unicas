@@ -7,7 +7,7 @@
         durante la recepción de productos y genera etiquetas personalizadas.
     """,
     "category": "Inventory",
-    "author": "TuNombre",
+    "author": "Alphaqueb Consulting S.A.S.",
     "website": "https://gestpro.cloud",
     "license": "LGPL-3",
     "depends": ["stock", "base", "web"],  # Incluye 'web' en las dependencias para asegurar la carga del módulo
