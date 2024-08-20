@@ -6,6 +6,7 @@
         <field name="arch" type="xml">
             <!-- Extiende la vista para insertar campos en move_line_ids -->
             <xpath expr="//field[@name='move_line_ids']/tree" position="inside">
+                <field name="folio" string="Folio"/>
                 <field name="ancho" string="Ancho"/>
                 <field name="gramaje" string="Gramaje"/>
                 <field name="tipo" string="Tipo"/>

@@ -8,3 +8,4 @@ class StockMoveLine(models.Model):
     tipo = fields.Char(string="Tipo", required=True)
     kilos = fields.Float(string="Kilos", required=True)
     planta = fields.Char(string="Planta", required=True)
+    folio = fields.Char(string="Folio", required=True)
