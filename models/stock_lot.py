@@ -1,7 +1,7 @@
 from odoo import models, fields
 
-class StockMove(models.Model):
-    _inherit = 'stock.move'
+class StockMoveLine(models.Model):
+    _inherit = 'stock.move.line'
 
     ancho = fields.Float(string="Ancho")
     gramaje = fields.Float(string="Gramaje")
