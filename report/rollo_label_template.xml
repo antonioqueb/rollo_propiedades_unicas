@@ -18,7 +18,7 @@
                 <p><strong>Tipo:</strong> <span t-field="o.tipo"/></p>
                 <p><strong>Kilos:</strong> <span t-field="o.kilos"/> kg</p>
                 <p><strong>Planta:</strong> <span t-field="o.planta"/></p>
-                <p><strong>Folio:</strong> <span t-field="o.folio"/></p>
+               
             </div>
         </t>
     </template>
