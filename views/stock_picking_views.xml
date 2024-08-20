@@ -6,7 +6,6 @@
         <field name="arch" type="xml">
             <!-- Usamos xpath para insertar nuestros campos personalizados en la vista tree -->
             <xpath expr="//field[@name='move_ids_without_package']/tree" position="inside">
-                <field name="folio" string="Folio"/>
                 <field name="ancho" string="Ancho"/>
                 <field name="gramaje" string="Gramaje"/>
                 <field name="tipo" string="Tipo"/>
