@@ -10,7 +10,7 @@
             </xpath>
 
             <!-- Modificar la vista de las líneas de movimiento -->
-            <xpath expr="//field[@name='move_line_ids']" position="replace">
+            <xpath expr="//field[@name='move_line_ids']" position="after">
                 <field name="move_line_ids">
                     <tree editable="bottom">
                         <!-- Campos estándar -->
