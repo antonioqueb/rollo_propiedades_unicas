@@ -4,23 +4,14 @@
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//form/sheet/group" position="inside">
-                <field name="company_id"/>
-            </xpath>
-            <xpath expr="//field[@name='move_line_ids']" position="after">
-                <field name="move_line_ids">
-                    <tree editable="bottom">
-                        <field name="product_id" domain="[('company_id', '=', context.get('company_id', False)), ('type', '!=', 'service')]" required="1"/>
-                        <field name="lot_id" context="{'default_product_id': product_id}" domain="[('product_id', '=', product_id)]" required="1"/>
-                        <field name="quantity" string="Cantidad Procesada" required="1"/>
-                        <field name="ancho" string="Ancho"/>
-                        <field name="gramaje" string="Gramaje"/>
-                        <field name="tipo" string="Tipo"/>
-                        <field name="kilos" string="Kilos"/>
-                        <field name="planta" string="Planta"/>
-                        <field name="folio" string="Folio"/>
-                    </tree>
-                </field>
+            <!-- Usamos xpath para insertar nuestros campos personalizados en la vista tree -->
+            <xpath expr="//field[@name='move_ids_without_package']/tree" position="inside">
+                <field name="folio" string="Folio"/>
+                <field name="ancho" string="Ancho"/>
+                <field name="gramaje" string="Gramaje"/>
+                <field name="tipo" string="Tipo"/>
+                <field name="kilos" string="Kilos"/>
+                <field name="planta" string="Planta"/>
             </xpath>
         </field>
     </record>
