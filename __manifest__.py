@@ -15,7 +15,6 @@
             "views/stock_lot_views.xml",  # Este archivo debe cargarse primero para que las acciones estén definidas
             "views/rollo_menu_views.xml",  # Ahora puedes cargar el menú que hace referencia a las acciones definidas anteriormente
             "views/stock_picking_views.xml",
-            # "report/rollo_label_template.xml",
             "security/ir.model.access.csv"  # Incluye este archivo si es necesario.
 ],
 

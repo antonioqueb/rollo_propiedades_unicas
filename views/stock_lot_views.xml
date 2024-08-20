@@ -4,9 +4,7 @@
         <field name="model">stock.move.line</field>
         <field name="arch" type="xml">
             <form string="Lote de Producción">
-                <header>
-                <!-- <button name="%(rollo_propiedades_unicas.action_report_rollo_label)d" string="Imprimir Etiqueta Personalizada" type="action" class="oe_highlight"/> -->
-                </header>
+           
                 <sheet>
                     <group>
                         <field name="ancho" required="1"/>
