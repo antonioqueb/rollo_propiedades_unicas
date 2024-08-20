@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
         <!-- Acción para la vista de lotes -->
@@ -6,7 +5,7 @@
             <field name="name">Lotes de Rollo</field>
             <field name="res_model">stock.move.line</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('product_id.tracking', '=', 'serial')]</field> <!-- Ajusta el dominio si es necesario -->
+            <field name="domain">[('product_id.tracking', '=', 'serial')]</field>
         </record>
 
         <!-- Acción para la vista de picking -->
@@ -16,7 +15,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-       <!-- Menú raíz -->
+        <!-- Menú raíz -->
         <menuitem id="menu_rollo_root" name="Propiedades de Rollo" sequence="10"/>
 
         <!-- Submenú para Lotes de Rollo -->
