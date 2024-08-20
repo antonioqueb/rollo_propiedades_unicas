@@ -4,8 +4,8 @@
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
-            <!-- Aseguramos que estamos apuntando correctamente al campo move_line_ids -->
-            <xpath expr="//field[@name='move_ids_without_package']/tree" position="inside">
+            <!-- Asegúrate de apuntar correctamente a move_line_ids que está relacionado con stock.move.line -->
+            <xpath expr="//field[@name='move_line_ids']/tree" position="inside">
                 <field name="ancho" string="Ancho"/>
                 <field name="gramaje" string="Gramaje"/>
                 <field name="tipo" string="Tipo"/>
