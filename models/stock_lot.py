@@ -9,10 +9,3 @@ class StockMoveLine(models.Model):
     kilos = fields.Float(string="Kilos", required=True)
     planta = fields.Char(string="Planta", required=True)
     folio = fields.Char(string="Folio", required=True)
-
-    @api.onchange('product_id')
-    def _onchange_product_id(self):
-        # Aquí puedes agregar lógica para autocompletar algunos campos personalizados en función del producto
-        if self.product_id:
-            # Ejemplo de lógica para autocompletar o calcular valores
-            self.tipo = self.product_id.default_code  # Solo un ejemplo simple
