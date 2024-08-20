@@ -1,11 +1,11 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
-class StockMoveLine(models.Model):
-    _inherit = 'stock.move.line'
+class StockMove(models.Model):
+    _inherit = 'stock.move'
 
-    ancho = fields.Float(string="Ancho", required=True)
-    gramaje = fields.Float(string="Gramaje", required=True)
-    tipo = fields.Char(string="Tipo", required=True)
-    kilos = fields.Float(string="Kilos", required=True)
-    planta = fields.Char(string="Planta", required=True)
-    folio = fields.Char(string="Folio", required=True)
+    ancho = fields.Float(string="Ancho")
+    gramaje = fields.Float(string="Gramaje")
+    tipo = fields.Char(string="Tipo")
+    kilos = fields.Float(string="Kilos")
+    planta = fields.Char(string="Planta")
+    folio = fields.Char(string="Folio")
